@@ -1,0 +1,56 @@
+<form>
+  <H1>Create account</h1>
+  <label class="alignleftn">First name*:</label>
+  <label class="alignrightn">Last name:</label>
+<br>
+<input type='text' class="alignleft" placeholder="enter your first name" name="user" required>
+      <input type='text' class="alignright"placeholder="enter your last name" >
+<div style="clear: both;"></div>
+  
+  <p class="alignleftn">Email*
+    <br>
+  <input type='email'id="last" placeholder="enter your email" name="user" required></p>
+<br>
+<label class="alignleftn">Password*:</label>
+  <label class="alignrightn">Confirm password*:</label>
+<br>
+
+<input type='text' class="alignleft" placeholder="enter your password"name="user" required >
+      <input type='text' class="alignright" placeholder="enter your password again"name="user" required >
+<div style="clear: both;"></div>
+<br>
+<label class="alignleftn">Gender:</label>
+  <label class="alignrightn">Hobbies:</label>
+<br>
+
+<p class="alignleft"><input type="radio" name="gender">Male<input type="radio" name="gender">Female</p>
+  <p class="alignright"><input type="checkbox" name="hobby">Music
+    <input type="checkbox" name="hobby" >Sports
+    <input type="checkbox" name="hobby">Travel<input type="checkbox">Movies</p>
+<div style="clear: both;"></div>  
+<label  class="alignleftn">Source of Income:</label>
+  <label for="fname" class="alignrightn">Income:(0 to 20000)</label>
+<br>
+<p><select>
+    <option>Employed</option>
+    <option>Unemployed</option>
+  </select></p>
+<input type="range" min="0" max="20000" value="50" class="alignright">
+<div style="clear: both;"></div>
+  
+<br>
+<label  class="alignleftn">Upload profile picture:</label>
+  <label class="alignrightn">Age:</label>
+<br>
+
+  <input type='file' multiple='false' accept='image/*' class= "alignleft"onchange='upload()'>
+<input type='number' class="alignright"placeholder="18" >
+<div style="clear: both;"></div>
+<p class="alignleftn">Bio
+  <textarea rows="20" cols="30">
+</textarea>
+<br>
+  <input class="alignright" id='final' type="submit" value="create" onclick="alert('Account Created')">
+  </form>
+  
+  
